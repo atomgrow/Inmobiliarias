@@ -105,7 +105,7 @@
           <span class="accent-rule" aria-hidden="true"></span>
           <p class="lead">En 20 minutos, sin costo, revisamos tu situación y te digo por dónde conviene empezar. Si no tiene sentido para tu inmobiliaria, también te lo digo.</p>
           <a class="cta" href="https://wa.me/5491136254358?text=Hola%20Tomas%2C%20quiero%20conversar%20sobre%20el%20agente%20para%20mi%20inmobiliaria.">Hablemos por WhatsApp <span aria-hidden="true">→</span></a>
-          <address><strong>Tomas Vukojicic</strong><a href="https://wa.me/5491136254358?text=Hola%20Tomas%2C%20quiero%20conversar%20sobre%20el%20agente%20para%20mi%20inmobiliaria.">+54 9 11 3625-4358</a><a href="https://www.atomgrow.net">www.atomgrow.net</a><span class="email-row"><span class="email-text">tomas@atomgrow.net</span><button class="copy-email" type="button" data-copy-email="tomas@atomgrow.net">Copiar correo</button></span></address>
+          <address><strong>Tomas Vukojicic</strong><a href="https://wa.me/5491136254358?text=Hola%20Tomas%2C%20quiero%20conversar%20sobre%20el%20agente%20para%20mi%20inmobiliaria.">+54 9 11 3625-4358</a><a href="https://www.atomgrow.net">www.atomgrow.net</a><span class="email-row"><span class="email-text">tomas@atomgrow.net</span><button class="copy-email" type="button" aria-label="Copiar correo" title="Copiar correo" data-copy-email="tomas@atomgrow.net"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8V5.5A1.5 1.5 0 0 1 9.5 4h9A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H16"/><rect x="4" y="8" width="12" height="12" rx="2.5"/></svg></button></span></address>
         </div>
         <div class="folio"><span>Atomgrow / Inmobiliarias</span><span>06 / 06</span></div>
       </div>
@@ -130,9 +130,10 @@
           document.execCommand('copy');
           area.remove();
         }
-        const label = button.textContent;
-        button.textContent = 'Copiado';
-        setTimeout(() => { button.textContent = label; }, 1600);
+        const label = button.getAttribute('aria-label');
+        button.setAttribute('aria-label', 'Correo copiado');
+        button.setAttribute('title', 'Correo copiado');
+        setTimeout(() => { button.setAttribute('aria-label', label); button.setAttribute('title', label); }, 1600);
       });
     })();
   </script>

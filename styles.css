@@ -33,7 +33,7 @@ h2{font-size:clamp(58px,9.8vw,100px);margin-bottom:24px}
 .number{font-family:Cormorant,Georgia,serif;font-size:31px;line-height:1;color:var(--orange)}
 .frictions strong,.system-steps h3{font-size:18px;line-height:1.3}
 .frictions p,.system-steps p{font-size:15px;line-height:1.45;margin:4px 0 0}
-.problem-end{background:var(--orange);color:white;border-radius:24px;margin:0 12px}
+.problem-end{background:var(--orange);color:white}
 .problem-end .panel-inner{min-height:160px;display:flex;justify-content:center;padding-top:25px}
 .problem-end p{max-width:640px;margin:0 0 18px;font-family:Cormorant,Georgia,serif;font-size:clamp(24px,4vw,38px);line-height:1.04}
 .problem-end .folio{padding-top:10px}
@@ -74,7 +74,8 @@ address{display:flex;flex-wrap:wrap;gap:9px 22px;margin-top:32px;font-size:13px;
 address a{text-decoration-thickness:1px;text-underline-offset:3px}
 .email-row{display:inline-flex;align-items:center;gap:10px}
 .email-text{user-select:text}
-.copy-email{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:5px 10px;background:transparent;color:var(--paper);font:inherit;font-size:11px;cursor:pointer}
+.copy-email{width:30px;height:30px;display:inline-grid;place-items:center;border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:0;background:transparent;color:var(--paper);cursor:pointer}
+.copy-email svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .copy-email:hover,.copy-email:focus-visible{background:rgba(255,255,255,.12)}
 @media(max-width:620px){
   .panel-inner{width:calc(100% - 40px);padding-top:25px;padding-bottom:22px}
