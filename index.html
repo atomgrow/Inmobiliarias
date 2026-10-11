@@ -6,8 +6,6 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="theme-color" content="#101923">
   <meta name="description" content="Un agente de IA hecho a medida para responder, calificar y coordinar consultas inmobiliarias.">
-  <meta property="og:title" content="Agente de IA para inmobiliarias | Atomgrow">
-  <meta property="og:description" content="Un agente de IA hecho a medida para responder, calificar y coordinar consultas inmobiliarias.">
   <title>Agente de IA para inmobiliarias | Atomgrow</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -105,11 +103,36 @@
           <span class="accent-rule" aria-hidden="true"></span>
           <p class="lead">En 20 minutos, sin costo, revisamos tu situación y te digo por dónde conviene empezar. Si no tiene sentido para tu inmobiliaria, también te lo digo.</p>
           <a class="cta" href="https://wa.me/5491136254358?text=Hola%20Tomas%2C%20quiero%20conversar%20sobre%20el%20agente%20para%20mi%20inmobiliaria.">Hablemos por WhatsApp <span aria-hidden="true">→</span></a>
-          <address><strong>Tomas Vukojicic</strong><a href="https://wa.me/5491136254358">+54 9 11 3625-4358</a><a href="https://www.atomgrow.net">www.atomgrow.net</a></address>
+          <address><strong>Tomas Vukojicic</strong><a href="https://wa.me/5491136254358?text=Hola%20Tomas%2C%20quiero%20conversar%20sobre%20el%20agente%20para%20mi%20inmobiliaria.">+54 9 11 3625-4358</a><a href="https://www.atomgrow.net">www.atomgrow.net</a><span class="email-row"><span class="email-text">tomas@atomgrow.net</span><button class="copy-email" type="button" data-copy-email="tomas@atomgrow.net">Copiar correo</button></span></address>
         </div>
         <div class="folio"><span>Atomgrow / Inmobiliarias</span><span>06 / 06</span></div>
       </div>
     </section>
   </main>
+  <script>
+    (() => {
+      const button = document.querySelector('[data-copy-email]');
+      if (!button) return;
+      button.addEventListener('click', async () => {
+        const email = button.dataset.copyEmail;
+        try {
+          await navigator.clipboard.writeText(email);
+        } catch {
+          const area = document.createElement('textarea');
+          area.value = email;
+          area.setAttribute('readonly', '');
+          area.style.position = 'fixed';
+          area.style.opacity = '0';
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand('copy');
+          area.remove();
+        }
+        const label = button.textContent;
+        button.textContent = 'Copiado';
+        setTimeout(() => { button.textContent = label; }, 1600);
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -72,6 +72,10 @@ h2{font-size:clamp(58px,9.8vw,100px);margin-bottom:24px}
 .cta span{font-size:23px;line-height:1}
 address{display:flex;flex-wrap:wrap;gap:9px 22px;margin-top:32px;font-size:13px;font-style:normal}
 address a{text-decoration-thickness:1px;text-underline-offset:3px}
+.email-row{display:inline-flex;align-items:center;gap:10px}
+.email-text{user-select:text}
+.copy-email{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:5px 10px;background:transparent;color:var(--paper);font:inherit;font-size:11px;cursor:pointer}
+.copy-email:hover,.copy-email:focus-visible{background:rgba(255,255,255,.12)}
 @media(max-width:620px){
   .panel-inner{width:calc(100% - 40px);padding-top:25px;padding-bottom:22px}
   .logo{width:76px}.logo-small{width:64px}
@@ -89,6 +93,7 @@ address a{text-decoration-thickness:1px;text-underline-offset:3px}
   .custom-photo{height:31svh;min-height:200px}
   .panel-custom .custom-content{min-height:69svh}
   .human-card{padding:17px 18px}
-  address{display:grid;gap:5px}
+  address{display:grid;gap:7px}
+  .email-row{justify-content:space-between;max-width:240px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
