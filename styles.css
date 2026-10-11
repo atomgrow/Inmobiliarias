@@ -54,7 +54,7 @@ h2{font-size:clamp(58px,9.8vw,100px);margin-bottom:24px}
 .advisor-brief dt{font-weight:700}
 .advisor-brief dd{margin:0}
 .panel-system{background:var(--paper)}
-.panel-system h2{font-size:clamp(56px,9vw,90px)}
+.panel-system h2{font-size:clamp(56px,9vw,90px);line-height:1.08}
 .system-steps h3{margin:0}
 .panel-custom{background:var(--cream)}
 .custom-photo{height:37svh;min-height:240px;background:url('assets/vertical-exterior.jpg') center 60%/cover no-repeat;border-radius:0 0 24px 24px}
