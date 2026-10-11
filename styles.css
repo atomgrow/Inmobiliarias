@@ -15,7 +15,7 @@ a{color:inherit}
 .eyebrow{margin:0 0 15px;color:var(--orange);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 .eyebrow.amber{color:var(--amber)}
 h1,h2,h3,p{margin-top:0}
-h1,h2{font-family:Cormorant,Georgia,serif;font-weight:600;line-height:.98;letter-spacing:-.032em}
+h1,h2{font-family:Cormorant,Georgia,serif;font-weight:600;line-height:1.06;letter-spacing:-.032em}
 h1{font-size:clamp(64px,11vw,112px);margin-bottom:28px}
 h2{font-size:clamp(58px,9.8vw,100px);margin-bottom:24px}
 .accent-rule{display:block;width:62px;height:3px;background:var(--orange);margin-bottom:25px}
@@ -54,7 +54,7 @@ h2{font-size:clamp(58px,9.8vw,100px);margin-bottom:24px}
 .advisor-brief dt{font-weight:700}
 .advisor-brief dd{margin:0}
 .panel-system{background:var(--paper)}
-.panel-system h2{font-size:clamp(56px,9vw,90px);line-height:1.08}
+.panel-system h2{font-size:clamp(56px,9vw,90px);line-height:1.10}
 .system-steps h3{margin:0}
 .panel-custom{background:var(--cream)}
 .custom-photo{height:37svh;min-height:240px;background:url('assets/vertical-exterior.jpg') center 60%/cover no-repeat;border-radius:0 0 24px 24px}
@@ -75,8 +75,8 @@ address a{text-decoration-thickness:1px;text-underline-offset:3px}
 @media(max-width:620px){
   .panel-inner{width:calc(100% - 40px);padding-top:25px;padding-bottom:22px}
   .logo{width:76px}.logo-small{width:64px}
-  h1{font-size:clamp(58px,14vw,82px)}
-  h2{font-size:clamp(55px,13vw,78px)}
+  h1{font-size:clamp(58px,14vw,82px);line-height:1.12}
+  h2{font-size:clamp(55px,13vw,78px);line-height:1.12}
   .panel-hero{background-position:center,right 42% center}
   .panel-hero .hero-copy{padding:24px 0}
   .panel-problem .panel-inner{min-height:calc(100svh - 145px)}
